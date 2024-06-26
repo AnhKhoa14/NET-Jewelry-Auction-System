@@ -1,4 +1,5 @@
 ﻿using BusinessObjects;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,18 +10,19 @@ namespace DataAccessObjects
 {
 	public class AuctionDAO
 	{
-		public static List<Auction> GetAllAuctions()
+		public static async Task<List<Auction>> GetAllAuctions()
 		{
 			var list = new List<Auction>();
 			try
 			{
 				using var db = new GroupProjectPRN221();
-				list = db.Auctions.ToList();
+				return await db.Auctions.Include(c=>c.Jewelry).ToListAsync();
+                list = db.Auctions.Include(c=>c.Jewelry).ToList();
 			} catch (Exception ex)
 			{
 				throw new Exception(ex.Message);
 			}
-			return list;
+			
 		}
 
 		public static Auction GetAuctionById(int id)

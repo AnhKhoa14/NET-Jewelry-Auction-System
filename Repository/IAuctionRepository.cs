@@ -9,7 +9,7 @@ namespace Repository
 {
 	public interface IAuctionRepository
 	{
-		public List<Auction> GetAllAuctions();
+		public  Task<List<Auction>> GetAllAuctions();
 		public Auction GetAuctionById(int id);
 		public void CreateAuction(Auction auction);
 		public void UpdateAuction(Auction auction);

@@ -27,6 +27,7 @@ namespace BusinessObjects
         public DbSet<Invoice> Invoices { get; set; }
         public DbSet<JewelryMaterial> JewelryMaterials { get; set; }
         public DbSet<UserAuction> UserAuctions { get; set; }
+        public DbSet<AuctionRequest> AuctionRequests { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -60,6 +61,9 @@ namespace BusinessObjects
                 entity.Property(e => e.Address).HasMaxLength(200);
                 entity.Property(e => e.Password).IsRequired();
                 entity.HasOne(e => e.Role).WithMany(r => r.User).HasForeignKey(e => e.RoleId);
+                entity.HasIndex(e => e.Email).IsUnique();
+                entity.HasIndex(e => e.Phone).IsUnique();
+
             });
 
             // Role
@@ -89,7 +93,16 @@ namespace BusinessObjects
                 entity.Property(e => e.Name).IsRequired();
                 entity.Property(e => e.Description);
                 entity.Property(e => e.Price).IsRequired();
+                entity.Property(e => e.IsDelete).IsRequired();
+                entity.HasOne(e => e.AuctionRequest)
+                      .WithOne(a => a.Jewelry)
+                      .HasForeignKey<Jewelry>(e => e.AuctionRequestId)
+                      .IsRequired(false); // This makes the relationship optional
                 entity.HasMany(e => e.Auctions).WithOne(a => a.Jewelry).HasForeignKey(a => a.JewelryId);
+                entity.HasOne(e => e.AuctionRequest)
+                      .WithOne(a => a.Jewelry)
+                      .HasForeignKey<Jewelry>(e => e.AuctionRequestId)
+                      .IsRequired(false);
             });
 
             // Material
@@ -131,6 +144,19 @@ namespace BusinessObjects
                 entity.HasKey(e => e.Id);
                 entity.HasOne(e => e.User).WithMany(u => u.UserAuctions).HasForeignKey(e => e.UserId);
                 entity.HasOne(e => e.Auction).WithMany(a => a.UserAuctions).HasForeignKey(e => e.AuctionId);
+            });
+
+            // AuctionRequest
+            modelBuilder.Entity<AuctionRequest>(entity =>
+            {
+                entity.HasKey(e => e.Id);  
+                entity.Property(e => e.Title);
+                entity.Property(e => e.Description);
+                entity.Property(e => e.Image);
+                entity.Property(e => e.RequestDate).HasColumnType("datetime");
+                entity.Property(e => e.Status).HasMaxLength(20);
+                entity.Property(e => e.IsDelete).IsRequired();
+                entity.HasOne(e => e.User).WithMany(u => u.AuctionRequests).HasForeignKey(e => e.UserId);
             });
         }
     }

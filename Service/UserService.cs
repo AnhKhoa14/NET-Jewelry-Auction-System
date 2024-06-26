@@ -16,17 +16,24 @@ namespace Service
             userRepository = new UserRepository();
         }
 
-		public void CreateUser(User user)
-		{
-			userRepository.CreateUser(user);
-		}
+        public void CreateUser(User user)
+        { 
+            user.IsDelete = false; 
+            userRepository.CreateUser(user);
+        }
+         
 
-		public void DeleteUser(User user)
+        public void DeleteUser(User user)
 		{
 			userRepository.DeleteUser(user);
 		}
 
-		public User GetUserByID(int id)
+        public List<Role> GetRoles()
+        {
+            return userRepository.GetRoles();
+        }
+
+        public User GetUserByID(int id)
 		{
 			return userRepository.GetUserByID(id);
 		}

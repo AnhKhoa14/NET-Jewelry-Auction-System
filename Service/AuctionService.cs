@@ -25,9 +25,9 @@ namespace Service
             _auctionRepository.DeleteAuction(auction);
         }
 
-        public List<Auction> GetAllAuctions()
+        public async Task<List<Auction>> GetAllAuctions()
         {
-            return _auctionRepository.GetAllAuctions();
+            return await _auctionRepository.GetAllAuctions();
         }
 
         public Auction GetAuctionById(int id)

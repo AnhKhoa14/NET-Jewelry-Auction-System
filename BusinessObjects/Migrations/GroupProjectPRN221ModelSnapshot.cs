@@ -57,6 +57,47 @@ namespace BusinessObjects.Migrations
                     b.ToTable("Auctions", (string)null);
                 });
 
+            modelBuilder.Entity("BusinessObjects.AuctionRequest", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDelete")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("RequestDate")
+                        .HasColumnType("datetime");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AuctionRequests");
+                });
+
             modelBuilder.Entity("BusinessObjects.Bid", b =>
                 {
                     b.Property<int>("Id")
@@ -129,6 +170,9 @@ namespace BusinessObjects.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("AuctionRequestId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -144,6 +188,9 @@ namespace BusinessObjects.Migrations
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AuctionRequestId")
+                        .IsUnique();
 
                     b.ToTable("Jewelries");
                 });
@@ -185,6 +232,9 @@ namespace BusinessObjects.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 
@@ -257,6 +307,12 @@ namespace BusinessObjects.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("Email")
+                        .IsUnique();
+
+                    b.HasIndex("Phone")
+                        .IsUnique();
+
                     b.HasIndex("RoleId");
 
                     b.ToTable("Users");
@@ -296,6 +352,17 @@ namespace BusinessObjects.Migrations
                     b.Navigation("Jewelry");
                 });
 
+            modelBuilder.Entity("BusinessObjects.AuctionRequest", b =>
+                {
+                    b.HasOne("BusinessObjects.User", "User")
+                        .WithMany("AuctionRequests")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("BusinessObjects.Bid", b =>
                 {
                     b.HasOne("BusinessObjects.Auction", "Auction")
@@ -332,6 +399,15 @@ namespace BusinessObjects.Migrations
                     b.Navigation("Auction");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("BusinessObjects.Jewelry", b =>
+                {
+                    b.HasOne("BusinessObjects.AuctionRequest", "AuctionRequest")
+                        .WithOne("Jewelry")
+                        .HasForeignKey("BusinessObjects.Jewelry", "AuctionRequestId");
+
+                    b.Navigation("AuctionRequest");
                 });
 
             modelBuilder.Entity("BusinessObjects.JewelryMaterial", b =>
@@ -392,6 +468,12 @@ namespace BusinessObjects.Migrations
                     b.Navigation("UserAuctions");
                 });
 
+            modelBuilder.Entity("BusinessObjects.AuctionRequest", b =>
+                {
+                    b.Navigation("Jewelry")
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("BusinessObjects.Jewelry", b =>
                 {
                     b.Navigation("Auctions");
@@ -411,6 +493,8 @@ namespace BusinessObjects.Migrations
 
             modelBuilder.Entity("BusinessObjects.User", b =>
                 {
+                    b.Navigation("AuctionRequests");
+
                     b.Navigation("Bids");
 
                     b.Navigation("Invoices");
