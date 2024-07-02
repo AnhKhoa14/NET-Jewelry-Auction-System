@@ -20,9 +20,9 @@ namespace Repository
             AuctionDAO.DeleteAuction(auction);
         }
 
-        public async Task<List<Auction>> GetAllAuctions()
+        public List<Auction> GetAllAuctions()
         {
-            return await AuctionDAO.GetAllAuctions();
+            return AuctionDAO.GetAllAuctions();
         }
 
         public Auction GetAuctionById(int id)
@@ -30,9 +30,15 @@ namespace Repository
             return AuctionDAO.GetAuctionById(id);
         }
 
+        public List<Bid> GetBidForAuction(int auctionId)
+        {
+            return AuctionDAO.GetBidForAuctionId(auctionId);
+        }
+
         public void UpdateAuction(Auction auction)
         {
             AuctionDAO.UpdateAuction(auction);
         }
+
     }
 }

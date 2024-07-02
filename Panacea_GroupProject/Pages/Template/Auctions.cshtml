@@ -46,20 +46,15 @@
             }
 
         .auction-content {
-            /* justify-items:center; */
             display: flex;
             justify-content: center;
             align-items: center;
-            /* flex-wrap: wrap; */
+            flex-wrap: wrap;
             gap: 20px;
         }
 
-        .auction-current{
-            flex: 1;
-            max-width: 500px;
-        }
         .auction-image {
-            /* flex: 1; */
+            flex: 1;
             max-width: 500px;
         }
 
@@ -110,9 +105,8 @@
             gap: 20px;
         }
 
-            .auction-buttons button {
-                /* display: inline-block; */
-                
+            .auction-buttons a {
+                display: inline-block;
                 padding: 10px 20px;
                 font-size: 16px;
                 border: 2px solid #000;
@@ -122,10 +116,51 @@
                 transition: background-color 0.3s, color 0.3s;
             }
 
-                .auction-buttons button:hover {
+                .auction-buttons a:hover {
                     background-color: #000;
                     color: #fff;
                 }
+
+        .search-section {
+            background-color: #f9f9f9;
+            padding: 20px 0;
+        }
+
+
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .search-form {
+            display: flex;
+            flex: 1;
+            padding: 0;
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            border-radius: 0;
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            border-radius: 0 5px 5px 0;
+            transition: background-color 0.3s;
+        }
     </style>
 </head>
 
@@ -163,10 +198,11 @@
                                         {
                                             <a class="dropdown-item" href="/JewelryPage/Create">Create Jewelry</a>
                                         }
+                                        <a class="dropdown-item" href="/JewelryPage/ViewAll">See all browsed jewelry</a>
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="/Template/Auctions" id="auction-link" role="button" aria-haspopup="true" aria-expanded="false">
+                                    @* <a class="nav-link dropdown-toggle" href="/Template/Auctions" id="auction-link" role="button" aria-haspopup="true" aria-expanded="false">
                                         Auction
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="auction-link">
@@ -176,7 +212,7 @@
                                         {
                                             <a class="dropdown-item" href="/AuctionRequestPage/RequestApproval">Staff Request Approval</a>
                                         }
-                                    </div>
+                                    </div> *@
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="/Template/Contact">Contact us</a>
@@ -203,17 +239,12 @@
                             </ul>
                         </div>
 
-                        <div class="quote_btn-container ">
-                            <a href="">
-                                <img src="~/images/cart.png" alt="">
-                                <div class="cart_number">
-                                    0
-                                </div>
-                            </a>
-                            <form class="form-inline">
-                                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                        @* <div class="quote_btn-container">
+                            <form class="form-inline search-form" method="get" action="/search">
+                                <input class="form-control mr-sm-2 d-none" type="search" placeholder="Search" aria-label="Search" name="query">
                             </form>
-                        </div>
+                            <button class="btn my-2 my-sm-0 nav_search-btn" type="button"></button>
+                        </div> *@
                     </div>
                 </nav>
             </div>
@@ -221,56 +252,67 @@
         <!-- end header section -->
     </div>
 
-    <!-- auction section -->
-    <section class="auction-page">
+    <section class="search-section">
         <div class="container">
-            <div class="auction-header">
-                <h1>Current auction</h1>
-            </div>
-            <div class="auction-content">
-                <div class="auction-current">
-                    <h2>Ten trang suc </h2>
-                    <div class="auction-image">
-                        <img src="~/images/auctions.jpg" alt="Auction Image">
-                    </div>
-                    <div class="auction-details">
-                        </br>
-                        <div class="countdown">
-                            <div>
-                                <span id="days">05</span> Days
-                            </div>
-                            <div>
-                                <span id="hours">03</span> Hours
-                            </div>
-                            <div>
-                                <span id="minutes">29</span> Minutes
-                            </div>
-                            <div>
-                                <span id="seconds">09</span> Seconds
-                            </div>
-                        </div>
-                        <div class="auction-buttons">
-                            <form method="post">
-                                <input name="BidAmount" required />
-                                <button type="submit">Đấu giá</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                
+            <div class="search-box">
+                <form method="get" asp-page-handler="Search" class="search-form">
+                    <input type="text" name="SearchQuery" class="search-input" placeholder="Search auctions..." value="@Model.SearchQuery" />
+                    <button type="submit" class="search-button">Search</button>
+                </form>
             </div>
         </div>
     </section>
-    <!-- end auction section -->
-    
-        <section class="price_section layout_padding">
+
+    @* <>Current</> *@
+    @if (Model.CurrentAuctions != null)
+    {
+        <section class="auction-page">
             <div class="container">
-                <div class="heading_container">
-                    <h2>
-                        Upcoming Auction
-                    </h2>
+                <div class="auction-header">
+                    <h1>Current auction</h1>
                 </div>
-                <div class="price_container">
+                <div class="auction-content">
+                    <div class="auction-current">
+                        <h2>Name</h2>
+                        <div class="auction-image">
+                            <img src="~/images/auctions.jpg" alt="Auction Image">
+                        </div>
+                        <div class="auction-details">
+                            <br />
+                            <div class="countdown">
+                                <div>
+                                    <span id="days">05</span> Days
+                                </div>
+                                <div>
+                                    <span id="hours">03</span> Hours
+                                </div>
+                                <div>
+                                    <span id="minutes">29</span> Minutes
+                                </div>
+                                <div>
+                                    <span id="seconds">09</span> Seconds
+                                </div>
+                            </div>
+                            <div class="auction-buttons">
+                                <a href="/Auctions/BidPrice?id=@Model.CurrentAuctions.Id">Join</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    }
+
+    <!-- end auction section -->
+    @* chua start *@
+    <section class="price_section layout_padding">
+        <div class="container">
+            <div class="heading_container">
+                <h2>
+                    Auction
+                </h2>
+            </div>
+            <div class="price_container">
                 @foreach (var auction in Model.UpcomingAuctions)
                 {
                     <div class="box">
@@ -300,117 +342,24 @@
                             <h5>
                                 Gia khoi diem: <span>@auction.Price)</span>
                             </h5>
-
+                            <div class="auction-buttons">
+                                @* <button type="submit">Join</button> *@
+                                <a href="/Auctions/BidPrice?id=@auction.Id">Join</a>
+                            </div>
                         </div>
                     </div>
-                    }
-                
-                
-            </div><div class="d-flex justify-content-center">
+                }
+
+
+            @* </div><div class="d-flex justify-content-center">
                 <a href="" class="price_btn">
                     See More
                 </a>
-            </div>
-        </section>
-    
+            </div> *@
+    </section>
 
-    @* <section class="price_section layout_padding">
-        <div class="container">
-            <div class="heading_container">
-                <h2>
-                    Upcoming Auction
-                </h2>
-            </div>
-            <div class="price_container">
-                <div class="box">
-                    <div class="name">
-                        <h6>
-                            Diamond Ring
-                        </h6>
-                    </div>
-                    <div class="img-box">
-                        <img src="~/images/p-1.png" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <div class="countdown">
-                            <div>
-                                <span id="days-up">05</span> Days
-                            </div>
-                            <div>
-                                <span id="hours-up">03</span> Hours
-                            </div>
-                            <div>
-                                <span id="minutes-up">29</span> Minutes
-                            </div>
-                            <div>
-                                <span id="seconds-up">09</span> Seconds
-                            </div>
-                        </div>
-                        <h5>
-                            Gia khoi diem: <span>1000.00</span>
-                        </h5>
-                       
-                        
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="name">
-                        <h6>
-                            Diamond Ring
-                        </h6>
-                    </div>
-                    <div class="img-box">
-                        <img src="~/images/i-2.png" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <div class="auction-details">
-                            <div class="countdown">
-                                <div>
-                                    <span id="days">05</span> Days
-                                </div>
-                                <div>
-                                    <span id="hours">03</span> Hours
-                                </div>
-                                <div>
-                                    <span id="minutes">29</span> Minutes
-                                </div>
-                                <div>
-                                    <span id="seconds">09</span> Seconds
-                                </div>
-                            </div>
-                        </div>
-                        <h5>
-                            Gia khoi diem: <span>1000.00</span>
-                        </h5>
-                      
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="name">
-                        <h6>
-                            Diamond Ring
-                        </h6>
-                    </div>
-                    <div class="img-box">
-                        <img src="~/images/i-3.png" alt="">
-                    </div>
-                    <div class="detail-box">
-                        <h5>
-                            $<span>1000.00</span>
-                        </h5>
-                        <a href="">
-                            Buy Now
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center">
-                <a href="" class="price_btn">
-                    See More
-                </a>
-            </div>
-        </div>
-    </section> *@
+
+
 
     <!-- info section -->
     <section class="info_section ">
@@ -517,7 +466,7 @@
 
     <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("Jun 27, 2024 22:35:00").getTime();
+        var countDownDate = new Date(Date.now().getTime();
 
         // Update the count down every 1 second
         var x = setInterval(function () {
@@ -551,5 +500,4 @@
     </script>
 
 </body>
-
 

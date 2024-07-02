@@ -9,7 +9,12 @@ namespace Service
 {
     public interface IBidService
     {
-        public Task AddBid(Bid bid);
-        //Test nen chua tao may cai duoi nay. 2h roi :v
+        public List<Bid> GetAllBids();
+        public Bid GetBidById(int bidId);
+        public void AddBid(Bid bid);
+        public void UpdateBid(Bid bid);
+        public void DeleteBid(Bid bid);
+        public List<Bid> GetBidsByAuctionId(int auctionId);
+
     }
 }

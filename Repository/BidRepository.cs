@@ -10,6 +10,34 @@ namespace Repository
 {
     public class BidRepository : IBidRepository
     {
-        public  async Task AddBid(Bid bid) =>await BidDAO.AddBid(bid);
+        public void AddBid(Bid bid)
+        {
+            BidDAO.AddBid(bid);
+        }
+
+        public void DeleteBid(Bid bid)
+        {
+            BidDAO.DeleteBid(bid);
+        }
+
+        public List<Bid> GetAllBids()
+        {
+            return BidDAO.GetAllBids();
+        }
+
+        public Bid GetBidById(int bidId)
+        {
+            return BidDAO.GetBidById(bidId);
+        }
+
+        public List<Bid> GetBidsByAuctionId(int auctionId)
+        {
+            return BidDAO.GetBidsByAuctionId(auctionId);
+        }
+
+        public void UpdateBid(Bid bid)
+        {
+            BidDAO.UpdateBid(bid);
+        }
     }
 }

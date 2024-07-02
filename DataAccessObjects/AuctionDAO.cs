@@ -10,19 +10,18 @@ namespace DataAccessObjects
 {
 	public class AuctionDAO
 	{
-		public static async Task<List<Auction>> GetAllAuctions()
+		public static List<Auction> GetAllAuctions()
 		{
 			var list = new List<Auction>();
 			try
 			{
 				using var db = new GroupProjectPRN221();
-				return await db.Auctions.Include(c=>c.Jewelry).ToListAsync();
-                list = db.Auctions.Include(c=>c.Jewelry).ToList();
+				list = db.Auctions.Include(c => c.Jewelry).ToList();
 			} catch (Exception ex)
 			{
 				throw new Exception(ex.Message);
 			}
-			
+			return list;
 		}
 
 		public static Auction GetAuctionById(int id)
@@ -75,5 +74,19 @@ namespace DataAccessObjects
 				throw new Exception(ex.Message);
 			}
 		}
+
+		public static List<Bid> GetBidForAuctionId(int auctionId)
+		{
+            var list = new List<Bid>();
+            try
+			{
+                using var db = new GroupProjectPRN221();
+                list = db.Bids.Where(b => b.AuctionId == auctionId).ToList();
+            } catch (Exception ex)
+			{
+                throw new Exception(ex.Message);
+            }
+            return list;
+        }
 	}
 }

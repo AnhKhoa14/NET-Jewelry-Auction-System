@@ -25,9 +25,9 @@ namespace Service
             _auctionRepository.DeleteAuction(auction);
         }
 
-        public async Task<List<Auction>> GetAllAuctions()
+        public List<Auction> GetAllAuctions()
         {
-            return await _auctionRepository.GetAllAuctions();
+            return _auctionRepository.GetAllAuctions();
         }
 
         public Auction GetAuctionById(int id)
@@ -35,9 +35,16 @@ namespace Service
             return _auctionRepository.GetAuctionById(id);
         }
 
+        public List<Bid> GetBidForAuction(int auctionId)
+        {
+           return _auctionRepository.GetBidForAuction(auctionId);
+        }
+
         public void UpdateAuction(Auction auction)
         {
             _auctionRepository.UpdateAuction(auction);
         }
+        public List<Auction> Search(string keyword) =>  _auctionRepository.GetAllAuctions().Where(c => c.Jewelry.Name.Contains(keyword)).ToList();
+
     }
 }
