@@ -294,7 +294,10 @@
                                 </div>
                             </div>
                             <div class="auction-buttons">
-                                <a href="/Auctions/BidPrice?id=@Model.CurrentAuctions.Id">Join</a>
+                                @* <a href="/Auctions/BidPrice?id=@Model.CurrentAuctions.Id">Join</a> *@
+                                <form method="post" asp-page-handler="Join">
+                                    <button type="submit" class="join-button">Join</button>
+                                </form>
                             </div>
                         </div>
                     </div>
