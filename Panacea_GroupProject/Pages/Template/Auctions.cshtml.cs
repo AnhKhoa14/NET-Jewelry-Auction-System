@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Panacea_GroupProject.Helpers;
 using Service;
 using System;
+using System.Linq;
 
 namespace Panacea_GroupProject.Pages.Template
 {
@@ -40,17 +41,27 @@ namespace Panacea_GroupProject.Pages.Template
         [BindProperty]
         public decimal BidAmount { get; set; }
 
-        public async Task<IActionResult> OnPost(int id)
+        public async Task<IActionResult> OnPost(int auctionId)
         {
             LoggedInUser = HttpContext.Session.GetObjectFromJson<User>("LoggedInUser");
             UserAuction userAuction = new UserAuction()
             {
                 UserId = LoggedInUser.Id,
-                AuctionId = id
+                AuctionId = auctionId
             };
-            _userAuctionService.CreateAuction(userAuction);
-            await LoadDataAsync();
-            return Page();
+            if (_userAuctionService.GetUserAuctionByAuctionId(auctionId).Contains(userAuction))
+            {
+                return Redirect($"/Auctions/BidPrice?id={auctionId}");
+            }
+            else
+            {
+                _userAuctionService.CreateAuction(userAuction);
+                return Redirect($"/Auctions/BidPrice?id={auctionId}");
+
+            }
+
+            //await LoadDataAsync();
+            //return Page();
         }
 
         private async Task LoadDataAsync()

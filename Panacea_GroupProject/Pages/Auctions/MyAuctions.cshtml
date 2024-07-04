@@ -11,10 +11,10 @@
         @foreach (var auction in Model.Auctions)
         {
             <div class="auction-card">
-                <h3>@auction.Jewelry.Name</h3>
-                <p><strong>Start Date:</strong> @auction.StartDate</p>
-                <p><strong>End Date:</strong> @auction.EndDate</p>
-                <p><strong>Status:</strong> @auction.Status</p>
+                <h3>@auction.Auction.Jewelry.Name</h3>
+                <p><strong>Start Date:</strong> @auction.Auction.StartDate</p>
+                <p><strong>End Date:</strong> @auction.Auction.EndDate</p>
+                <p><strong>Status:</strong> @auction.Auction.Status</p>
                 <div class="action-buttons">
                     <a href="/Auctions/BidPrice?id=@auction.Id" class="btn btn-primary">View Details</a>
                 </div>

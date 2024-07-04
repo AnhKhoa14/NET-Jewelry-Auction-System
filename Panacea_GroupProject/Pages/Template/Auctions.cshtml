@@ -296,6 +296,7 @@
                             <div class="auction-buttons">
                                 @* <a href="/Auctions/BidPrice?id=@Model.CurrentAuctions.Id">Join</a> *@
                                 <form method="post" asp-page-handler="Join">
+                                    <input type="hidden" name="auctionId" value="@Model.CurrentAuctions.Id" />
                                     <button type="submit" class="join-button">Join</button>
                                 </form>
                             </div>
@@ -347,7 +348,12 @@
                             </h5>
                             <div class="auction-buttons">
                                 @* <button type="submit">Join</button> *@
-                                <a href="/Auctions/BidPrice?id=@auction.Id">Join</a>
+@*                                 <input type="hidden" name="auctionId" value="@auction.Id" />
+                                <a href="/Auctions/BidPrice?id=@auction.Id">Join</a> *@
+                                <form method="post" asp-page-handler="Join">
+                                    <input type="hidden" name="auctionId" value="@auction.Id" />
+                                    <button type="submit" class="join-button">Join</button>
+                                </form>
                             </div>
                         </div>
                     </div>
