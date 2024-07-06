@@ -52,6 +52,9 @@
             flex-wrap: wrap;
             gap: 20px;
         }
+        .auction-content .auction-current h2{
+            text-align: center;
+        }
 
         .auction-image {
             flex: 1;
@@ -105,7 +108,7 @@
             gap: 20px;
         }
 
-            .auction-buttons a {
+            .auction-buttons button {
                 display: inline-block;
                 padding: 10px 20px;
                 font-size: 16px;
@@ -116,8 +119,8 @@
                 transition: background-color 0.3s, color 0.3s;
             }
 
-                .auction-buttons a:hover {
-                    background-color: #000;
+                .auction-buttons button:hover {
+                    background-color: #FFFF00;
                     color: #fff;
                 }
 
@@ -273,13 +276,13 @@
                 </div>
                 <div class="auction-content">
                     <div class="auction-current">
-                        <h2>Name</h2>
+                        <h2>@Model.CurrentAuctions.Jewelry.Name</h2>
                         <div class="auction-image">
                             <img src="~/images/auctions.jpg" alt="Auction Image">
                         </div>
                         <div class="auction-details">
                             <br />
-                            <div class="countdown">
+                            @* <div class="countdown">
                                 <div>
                                     <span id="days">05</span> Days
                                 </div>
@@ -292,9 +295,13 @@
                                 <div>
                                     <span id="seconds">09</span> Seconds
                                 </div>
-                            </div>
+                            </div> *@
                             <div class="auction-buttons">
-                                <a href="/Auctions/BidPrice?id=@Model.CurrentAuctions.Id">Join</a>
+                                @* <a href="/Auctions/BidPrice?id=@Model.CurrentAuctions.Id">Join</a> *@
+                                <form method="post" asp-page-handler="Join">
+                                    <input type="hidden" name="auctionId" value="@Model.CurrentAuctions.Id" />
+                                    <button type="submit" class="join-button">Join</button>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -313,7 +320,7 @@
                 </h2>
             </div>
             <div class="price_container">
-                @foreach (var auction in Model.UpcomingAuctions)
+                @foreach (var auction in @Model.UpcomingAuctions)
                 {
                     <div class="box">
                         <div class="name">
@@ -344,7 +351,12 @@
                             </h5>
                             <div class="auction-buttons">
                                 @* <button type="submit">Join</button> *@
-                                <a href="/Auctions/BidPrice?id=@auction.Id">Join</a>
+@*                                 <input type="hidden" name="auctionId" value="@auction.Id" />
+                                <a href="/Auctions/BidPrice?id=@auction.Id">Join</a> *@
+                                <form method="post" asp-page-handler="Join">
+                                    <input type="hidden" name="auctionId" value="@auction.Id" />
+                                    <button type="submit" class="join-button">Join</button>
+                                </form>
                             </div>
                         </div>
                     </div>

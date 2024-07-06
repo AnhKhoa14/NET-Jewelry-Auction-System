@@ -10,8 +10,8 @@ builder.Services.AddScoped<IAuctionService, AuctionService>();
 builder.Services.AddScoped<IJewelryService, JewelryService>();
 builder.Services.AddScoped<IAuctionRequestService, AuctionRequestService>();
 builder.Services.AddScoped<IMaterialService, MaterialService>(); 
-builder.Services.AddScoped<IBidService, BidService>(); 
-
+builder.Services.AddScoped<IBidService, BidService>();
+builder.Services.AddScoped<IUserAuctionService, UserAuctionService>();
 
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
