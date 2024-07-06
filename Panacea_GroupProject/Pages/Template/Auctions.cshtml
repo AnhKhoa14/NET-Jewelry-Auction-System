@@ -52,9 +52,10 @@
             flex-wrap: wrap;
             gap: 20px;
         }
-        .auction-content .auction-current h2{
-            text-align: center;
-        }
+
+            .auction-content .auction-current h2 {
+                text-align: center;
+            }
 
         .auction-image {
             flex: 1;
@@ -206,15 +207,15 @@
                                 </li>
                                 <li class="nav-item dropdown">
                                     @* <a class="nav-link dropdown-toggle" href="/Template/Auctions" id="auction-link" role="button" aria-haspopup="true" aria-expanded="false">
-                                        Auction
+                                    Auction
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="auction-link">
-                                        <a class="dropdown-item" href="/upcoming-auctions">Upcoming Auctions</a>
-                                        <a class="dropdown-item" href="/AuctionRequestPage/Create">Auctions Request</a>
-                                        @if (loggedInUser != null && loggedInUser.RoleId.Equals(4))
-                                        {
-                                            <a class="dropdown-item" href="/AuctionRequestPage/RequestApproval">Staff Request Approval</a>
-                                        }
+                                    <a class="dropdown-item" href="/upcoming-auctions">Upcoming Auctions</a>
+                                    <a class="dropdown-item" href="/AuctionRequestPage/Create">Auctions Request</a>
+                                    @if (loggedInUser != null && loggedInUser.RoleId.Equals(4))
+                                    {
+                                    <a class="dropdown-item" href="/AuctionRequestPage/RequestApproval">Staff Request Approval</a>
+                                    }
                                     </div> *@
                                 </li>
                                 <li class="nav-item">
@@ -243,10 +244,10 @@
                         </div>
 
                         @* <div class="quote_btn-container">
-                            <form class="form-inline search-form" method="get" action="/search">
-                                <input class="form-control mr-sm-2 d-none" type="search" placeholder="Search" aria-label="Search" name="query">
-                            </form>
-                            <button class="btn my-2 my-sm-0 nav_search-btn" type="button"></button>
+                        <form class="form-inline search-form" method="get" action="/search">
+                        <input class="form-control mr-sm-2 d-none" type="search" placeholder="Search" aria-label="Search" name="query">
+                        </form>
+                        <button class="btn my-2 my-sm-0 nav_search-btn" type="button"></button>
                         </div> *@
                     </div>
                 </nav>
@@ -283,19 +284,19 @@
                         <div class="auction-details">
                             <br />
                             @* <div class="countdown">
-                                <div>
-                                    <span id="days">05</span> Days
-                                </div>
-                                <div>
-                                    <span id="hours">03</span> Hours
-                                </div>
-                                <div>
-                                    <span id="minutes">29</span> Minutes
-                                </div>
-                                <div>
-                                    <span id="seconds">09</span> Seconds
-                                </div>
-                            </div> *@
+                        <div>
+                        <span id="days">05</span> Days
+                        </div>
+                        <div>
+                        <span id="hours">03</span> Hours
+                        </div>
+                        <div>
+                        <span id="minutes">29</span> Minutes
+                        </div>
+                        <div>
+                        <span id="seconds">09</span> Seconds
+                        </div>
+                        </div> *@
                             <div class="auction-buttons">
                                 @* <a href="/Auctions/BidPrice?id=@Model.CurrentAuctions.Id">Join</a> *@
                                 <form method="post" asp-page-handler="Join">
@@ -351,8 +352,8 @@
                             </h5>
                             <div class="auction-buttons">
                                 @* <button type="submit">Join</button> *@
-@*                                 <input type="hidden" name="auctionId" value="@auction.Id" />
-                                <a href="/Auctions/BidPrice?id=@auction.Id">Join</a> *@
+                                @*                                 <input type="hidden" name="auctionId" value="@auction.Id" />
+                            <a href="/Auctions/BidPrice?id=@auction.Id">Join</a> *@
                                 <form method="post" asp-page-handler="Join">
                                     <input type="hidden" name="auctionId" value="@auction.Id" />
                                     <button type="submit" class="join-button">Join</button>
@@ -363,11 +364,11 @@
                 }
 
 
-            @* </div><div class="d-flex justify-content-center">
+                @* </div><div class="d-flex justify-content-center">
                 <a href="" class="price_btn">
-                    See More
+                See More
                 </a>
-            </div> *@
+                </div> *@
     </section>
 
 
