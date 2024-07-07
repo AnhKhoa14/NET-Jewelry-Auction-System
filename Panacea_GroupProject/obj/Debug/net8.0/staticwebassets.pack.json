@@ -1,0 +1,477 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Panacea_GroupProject.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Panacea_GroupProject.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\css\\register.css",
+      "PackagePath": "staticwebassets\\css\\register.css"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\css\\style.css.map",
+      "PackagePath": "staticwebassets\\css\\style.css.map"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\css\\style.scss",
+      "PackagePath": "staticwebassets\\css\\style.scss"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\fonts\\Poppins\\OFL.txt",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\OFL.txt"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\fonts\\Poppins\\Poppins-Bold.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-Bold.ttf"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\fonts\\Poppins\\Poppins-Regular.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Poppins\\Poppins-Regular.ttf"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\fonts\\ethnocentric\\ethnocentric rg it.ttf",
+      "PackagePath": "staticwebassets\\fonts\\ethnocentric\\ethnocentric rg it.ttf"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\fonts\\ethnocentric\\ethnocentric rg.ttf",
+      "PackagePath": "staticwebassets\\fonts\\ethnocentric\\ethnocentric rg.ttf"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\fonts\\ethnocentric\\read-this.html",
+      "PackagePath": "staticwebassets\\fonts\\ethnocentric\\read-this.html"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\fonts\\ethnocentric\\typodermic-eula-02-2014.pdf",
+      "PackagePath": "staticwebassets\\fonts\\ethnocentric\\typodermic-eula-02-2014.pdf"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\35ceba50-b0ea-4954-90ba-6442922eadf6_EC169C16-E0F5-44E8-B264-7BBF5BA3C069.jpeg",
+      "PackagePath": "staticwebassets\\images\\35ceba50-b0ea-4954-90ba-6442922eadf6_EC169C16-E0F5-44E8-B264-7BBF5BA3C069.jpeg"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\3bcb7af2-329e-4389-a9a9-3f847b1f1b8e_pexels-photo-164186.jpeg",
+      "PackagePath": "staticwebassets\\images\\3bcb7af2-329e-4389-a9a9-3f847b1f1b8e_pexels-photo-164186.jpeg"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\44f22d61-0a80-440d-ae16-33510ac3584f_pexels-photo-164186.jpeg",
+      "PackagePath": "staticwebassets\\images\\44f22d61-0a80-440d-ae16-33510ac3584f_pexels-photo-164186.jpeg"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\546bbd46-4386-4cee-9be4-605e4c137912_EC169C16-E0F5-44E8-B264-7BBF5BA3C069.jpeg",
+      "PackagePath": "staticwebassets\\images\\546bbd46-4386-4cee-9be4-605e4c137912_EC169C16-E0F5-44E8-B264-7BBF5BA3C069.jpeg"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\554aef57-8981-47d5-bb05-55d3023490c0_pexels-photo-164186.jpeg",
+      "PackagePath": "staticwebassets\\images\\554aef57-8981-47d5-bb05-55d3023490c0_pexels-photo-164186.jpeg"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\8bf3d261-4719-45b9-91df-4e2208ee2d59_pexels-photo-164186.jpeg",
+      "PackagePath": "staticwebassets\\images\\8bf3d261-4719-45b9-91df-4e2208ee2d59_pexels-photo-164186.jpeg"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\a905ca99-b906-459a-b771-96c2eb7185f8_EC169C16-E0F5-44E8-B264-7BBF5BA3C069.jpeg",
+      "PackagePath": "staticwebassets\\images\\a905ca99-b906-459a-b771-96c2eb7185f8_EC169C16-E0F5-44E8-B264-7BBF5BA3C069.jpeg"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\about-img.png",
+      "PackagePath": "staticwebassets\\images\\about-img.png"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\auctions.jpg",
+      "PackagePath": "staticwebassets\\images\\auctions.jpg"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\bc0d7686-2433-4bf4-901c-126315f20502_pexels-photo-164186.jpeg",
+      "PackagePath": "staticwebassets\\images\\bc0d7686-2433-4bf4-901c-126315f20502_pexels-photo-164186.jpeg"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\bg.jpg",
+      "PackagePath": "staticwebassets\\images\\bg.jpg"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\cart.png",
+      "PackagePath": "staticwebassets\\images\\cart.png"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\client.png",
+      "PackagePath": "staticwebassets\\images\\client.png"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\design-1.png",
+      "PackagePath": "staticwebassets\\images\\design-1.png"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\design-2.png",
+      "PackagePath": "staticwebassets\\images\\design-2.png"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\fb.png",
+      "PackagePath": "staticwebassets\\images\\fb.png"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\hero-bg.png",
+      "PackagePath": "staticwebassets\\images\\hero-bg.png"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\i-1.png",
+      "PackagePath": "staticwebassets\\images\\i-1.png"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\i-2.png",
+      "PackagePath": "staticwebassets\\images\\i-2.png"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\i-3.png",
+      "PackagePath": "staticwebassets\\images\\i-3.png"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\insta.png",
+      "PackagePath": "staticwebassets\\images\\insta.png"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\linkedin.png",
+      "PackagePath": "staticwebassets\\images\\linkedin.png"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\location.png",
+      "PackagePath": "staticwebassets\\images\\location.png"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\mail.png",
+      "PackagePath": "staticwebassets\\images\\mail.png"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\menu.png",
+      "PackagePath": "staticwebassets\\images\\menu.png"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\next-black.png",
+      "PackagePath": "staticwebassets\\images\\next-black.png"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\next.png",
+      "PackagePath": "staticwebassets\\images\\next.png"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\p-1.png",
+      "PackagePath": "staticwebassets\\images\\p-1.png"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\phone.png",
+      "PackagePath": "staticwebassets\\images\\phone.png"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\prev-black.png",
+      "PackagePath": "staticwebassets\\images\\prev-black.png"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\prev.png",
+      "PackagePath": "staticwebassets\\images\\prev.png"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\ring-img.jpg",
+      "PackagePath": "staticwebassets\\images\\ring-img.jpg"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\search-icon.png",
+      "PackagePath": "staticwebassets\\images\\search-icon.png"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\slider-img.png",
+      "PackagePath": "staticwebassets\\images\\slider-img.png"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\images\\twitter.png",
+      "PackagePath": "staticwebassets\\images\\twitter.png"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\js\\jquery-3.4.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.4.1.min.js"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\FPTU_Ky7\\PRN221\\2_7\\up git\\NET-Jewelry-Auction-System\\Panacea_GroupProject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Panacea_GroupProject.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Panacea_GroupProject.props",
+      "PackagePath": "build\\Panacea_GroupProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Panacea_GroupProject.props",
+      "PackagePath": "buildMultiTargeting\\Panacea_GroupProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Panacea_GroupProject.props",
+      "PackagePath": "buildTransitive\\Panacea_GroupProject.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
